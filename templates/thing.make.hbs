@@ -1,0 +1,27 @@
+<body>
+  {{> header}}
+  <div id="makeThing">
+    <h1>Let's make a thing!</h1>
+    <div id="thingSection">
+      <div class="name">
+        <input type="text" id="thingName" placeholder="Name this Thing ..."/>
+        <button id="createThing" onclick="sendThing()">Create</button>
+      </div>
+      <canvas id="thing" height="400" width="400"></canvas>
+    </div>
+    <div id="toppingSection">
+      <h3>Choose your components</h3>
+      <ul id="toppings">
+        {{#each toppings}}
+          <li class="topping" id="{{id}}">
+            <img src='//s3.amazonaws.com/aws-sensor-temperature/toppings/{{preview_image}}' />
+            <div class="label">{{name}}</div>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div id="userInfo" data-username="{{auth.credentials.user.username}}" style="display:none;"></div>
+  </div>
+  {{> footer}}
+  <script src="//s3.amazonaws.com/aws-sensor-temperature/js/make-thing.js"></script>
+</body> 

@@ -1,0 +1,10 @@
+<ul class="thing-boxes">
+  {{#each things}}
+    <li>
+      <a href="/thing/{{id}}">
+        <img src="{{{img}}}" />
+        <div class="name">{{name}}</div>
+      </a>
+    </li>
+  {{/each}}
+</ul>

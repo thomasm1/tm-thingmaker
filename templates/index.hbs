@@ -1,0 +1,17 @@
+<body class="index">
+  {{> header}}
+  <div id="main">
+    <div id="callToAction">
+      {{!-- <img src="//s3.amazonaws.com/aws-sensor-temperature/logo_header.png" class="logo" />  --}}
+      <h3>Create and Share a Thing</h3>
+      <div class="make-thing-button">
+        <a href="/make/thing">Make a thing!</a>
+      </div>
+    </div>
+    <div id="more">
+      <h2>Recent Things</h2>
+      {{> things}}
+    </div>
+    {{> footer}}
+  </div>
+</body>

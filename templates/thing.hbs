@@ -1,0 +1,18 @@
+<body>
+  {{> header}}
+  <div id="viewThing">
+    <div class="title">
+      <span class="thing-name">{{thing.name}}</span> by <a href="/user/{{thing.username}}">{{thing.username}}</a>
+    </div>
+    <img src="{{{thing.img}}}" class="thing-image"/>
+    <div class="thing-toppings">
+      <h4>Toppings:</h4>
+      <ul>
+        {{#each thing.toppings}}
+          <li>{{getToppingName this @root.toppings}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+  {{> footer}}
+</body>
