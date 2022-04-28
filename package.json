@@ -10,7 +10,7 @@
   "author": "Thomas Maestas <thomasm1.maestas@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "async": "2.0.0-rc.6",
+    "async": "2.6.4",
     "aws-sdk": "^2.3.11",
     "bcrypt-nodejs": "0.0.3",
     "boom": "3.1.3",
